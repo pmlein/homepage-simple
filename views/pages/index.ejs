@@ -6,52 +6,84 @@
 
 <body>
   <% include ../partials/nav.ejs %>
+  <a class="anchor" id="top"></a>
   <div class="jumbotron text-center">
     <div class="container">
       <a href="/" class="lang-logo">
-        <img src="/pic.jpg">
+        <img src="/pic.jpg" />
       </a>
       <h1>Paula Leinonen</h1>
       <p>Full-Stack Web-kehittäjä</p>
-      <!--<a type="button" class="btn btn-lg btn-default" 
-          href="https://github.com/pmlein/"><span class="glyphicon glyphicon-flash"></span>GitHub</a>
-      <a type="button" class="btn btn-lg btn-primary" href="https://homepage-simple/#biprojects"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a> 
-      -->
     </div>
   </div>
+  <hr/>
   <div class="container">
-  
-    <div class="alert alert-info text-center" role="alert">
-      Portfolio-sivuilleni olen koonnut muutamia Web-ohjelmistokehitykseen liittyviä töitäni sekä  
-      <a href="https://powerbi.microsoft.com/en-us/" class="alert-link">Power BI</a> -raportteja.
-    </div>
-    <hr>
-    <div class="row">
-        <div id="biprojects" class="col-md-12">
-            <h3>
-                <a href="">Väestönkehitys</a> 
-            </h3>
+      <div class="row">
+   
+    <!-- Portfolio -->
+     <div class="col-md-12">
+        <section id="projects">
+            <h3>Portfolio</h3>
+            <p>Olen koonnut tänne viimeisimpiä Web-ohjelmistokehitykseen liittyviä töitäni sekä 
+              <a href="https://powerbi.microsoft.com/en-us/">Power BI</a> -raportteja.
+            </p>
             <p>Raportti käyttää tilastokeskuksen avointa dataa.</p>
-          </div>
+          </section>      
+        </div>
     </div>
     <div class="row">
-      <div class="col-md-6">
-        <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
-        <ul>
-          <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/node-js-getting-started">Heroku Button</a> on the repository.</li>
+      <div id="web" class="col-md-12">
+        
+                  <h3>Web-ohjelmistokehitys</h3>
+                 <!-- <ul>
+                    <li>Portfolio-sivustoni (tämä kotisivu):  <a href="http://paulaleinonen.herokuapp.com/">Demo</a></li>
+          
+                   
+                  </ul> -->
 
-          <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/node-js-getting-started/blob/master/package.json">package.json</a>, creating a deployable slug.</li>
-          <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-          <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-        </ul>
-      </div>
+                  <div class="card" style="width: 18rem;">
+                      <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Portfolio-sivusto</h5>
+                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                        <p class="card-text">Portfolio-sivustoni (tämä kotisivu)</p>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">html5, Bootstrap, css</li>
+                        </ul>
+                      <div class="card-body">
+                        <a href="http://paulaleinonen.herokuapp.com/" class="card-link">Demo</a>
+                        <a href="https://github.com/pmlein/homepage-simple" class="card-link">Github</a>
+                      </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Kalenteritapahtumien muodostaminen</h5>
+                          <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                          <p class="card-text">Muunnos etsii ja muodostaa excel-tiedostossa olevasta "lukujärjestyksestä"
+                            standardin ICalendar-formaatin mukaiset tapahtumat, jotka voidaan viedä haluttuun kalenteriohjelmaan.
+                          </p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">html5, Bootstrap, css</li>
+                          </ul>
+                        <div class="card-body">
+                          <a href="http://paulaleinonen.herokuapp.com/" class="card-link">Demo</a>
+                          <a href="https://github.com/pmlein/homepage-simple" class="card-link">Github</a>
+                        </div>
+                      </div>              
+            </div>
+        
       <div class="col-md-6">
-        <h3><span class="glyphicon glyphicon-link"></span> Next Steps</h3>
+        <h3>Business Intelligence -raportteja</h3>
         <ul>
           <li>If you are following the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started</a> guide, then please head back to the tutorial and follow the next steps!</li>
           <li>If you deployed this app by deploying the Heroku Button, then in a command line shell, run:</li>
           <ul>
-            <li><code>git clone https://github.com/heroku/node-js-getting-started.git</code> - this will create a local copy of the source code for the app</li>
+            <li><code>git clone https://github.com/heroku/node-js-
+              
+            </code> - this will create a local copy of the source code for the app</li>
             <li><code>cd node-js-getting-started</code> - change directory into the local source code repository</li>
             <li><code>heroku git:remote -a &lt;your-app-name></code> - associate the Heroku app with the repository</li>
             <li>You'll now be set up to run the app locally, or <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#push-local-changes">deploy changes</a> to Heroku</li>

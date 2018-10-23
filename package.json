@@ -18,10 +18,14 @@
     "request": "^2.81.0",
     "tape": "^4.7.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pmlein/homepage-simple.git"
+  },
   "keywords": [
     "node",
     "heroku",
     "express"
   ],
-  "license": "MIT"
+  "license": "CC-BY-4.0"
 }
