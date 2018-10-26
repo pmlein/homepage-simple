@@ -34,9 +34,46 @@
         display:block;
     }
 
-    #web {
-      border-radius: 25px;
+    .web {
+      border-radius: 15px;
       padding: 20px;
-      background-color: rgb(217, 203, 240)
+      background-color: #745bad;
     }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid rgba(0,0,0,.125);
+      border-radius: .25rem;
+  }
+  .list-group-item {
+    background-color: #dac6fc;
+  }
+
+
+  .cardSet1 {
+    background-color: #dac6fc;
+  }
+
+/* Equal Card heights */
+  .row.equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.equal-height > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1;
+}
+
+
+/* Card link color */
+a.card-link {
+    color: #3506dd;
+    text-decoration: none;
+    background-color: transparent;
+}
     
